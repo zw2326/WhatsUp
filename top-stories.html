@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="top-stories.css" rel="stylesheet" type="text/css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+  <script type="text/javascript">
+    function MM_callJS(jsStr) { // v2.0
+      return eval(jsStr)
+    }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#menubar-topic-btn").click(function(){
+        $("#topic-bar-wrapper").fadeToggle();
+	    $("#topic-thumbnail1").fadeToggle(800);
+	    $("#topic-thumbnail2").fadeToggle(800);
+        $("#topic-thumbnail3").fadeToggle(800);
+        $("#topic-thumbnail4").fadeToggle(800);
+        $("#topic-thumbnail5").fadeToggle(800);
+        $("#topic-thumbnail6").fadeToggle(800);
+	    $("#topic-thumbnail7").fadeToggle(800);
+	    $("#topic-thumbnail8").fadeToggle(800);
+	    $("#topic-thumbnail9").fadeToggle(800);
+	    $("#topic-thumbnail10").fadeToggle(800);
+	    $("#topic-thumbnail11").fadeToggle(800);
+	    $("#topic-thumbnail12").fadeToggle(800);
+      });
+	  $("#menubar-lightbulb-btn").click(function(){
+        $("body").css("background-color", "black");
+	  });
+    });
+  </script>
+  <style type="text/css">
+    a.topics-link {text-decoration: none;}
+    a.topics-link:hover {text-decoration: none;}
+  </style>
+  </head>
+  <body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <a class="navbar-brand menubar-brand" href="home.html">What'sUp</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="defaultNavbar1">
+        <ul class="nav navbar-nav">
+          <li class="menubar-topic-dropdown"><button type="submit" id="menubar-topic-btn" class="btn btn-default menubar-topic-btn"><img src="res/menubar_topic_dropdown.png" alt="#" width="20" class="menubar-topic-img" />Topics</button></li>
+          <!--
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Topics<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Top Stories</a></li>
+              <li><a href="#">Politics</a></li>
+              <li><a href="#">Economy</a></li>
+              <li><a href="#">Sci&amp;Tech</a></li>
+              <li><a href="#">Entertainment</a></li>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">Others</a></li>
+              <li class="divider"></li>
+              <li><a href="#">World</a></li>
+              <li><a href="#">US</a></li>
+              <li><a href="#">China</a></li>
+              <li><a href="#">Local</a></li>
+            </ul>
+          </li>
+          -->
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control menubar-search-widget" placeholder="topic, keyword, date, anything..." size="30px">
+          </div>
+          <button type="submit" class="btn btn-default menubar-search-btn"><img src="res/menubar_search_btn.png" width="30" height="30"></button>
+        </form>
+        <ul class="nav navbar-nav">
+          <li><a href="#">New York, New York, US</a></li>
+          <li class="menubar-date">Monday, November 9th, 2015</li>
+          <li><a href="#">Halloween</a></li>
+          <ul class="nav navbar-nav">
+            <li><a href="#"><img src="res/menubar_weather_partly_cloudy.png" width="30" class="menubar-weather-img"/></a></li>
+            <li class="menubar-temperature">60°-53°</li>
+            <li><a href="#"><img src="res/menubar_weather_cloudy.png" width="30" class="menubar-weather-img"/></a></li>
+            <li class="menubar-temperature">61°-52°</li>
+            <li><a href="#"><img src="res/menubar_weather_rainy.png" width="30" class="menubar-weather-img"/></a></li>
+            <li class="menubar-temperature">62°-50°</li>
+          </ul>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <button type="submit" id="menubar-lightbulb-btn" class="btn btn-default menubar-lightbulb-btn"><img src="res/menubar_lights_on.png" width="25" height="25" class="menubar-lightbulb-img"></button>
+          </li>
+          <li><a href="#">Sign in</a></li>
+          <li><a href="#">Favourite</a></li>
+          <li><a href="#">History</a></li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Customize</a></li>
+              <li><a href="#">Settings</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Search Help</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <nav id="topic-bar-wrapper" class="navbar navbar-default topic-bar-wrapper">
+    <div class="container-fluid">
+      <div class="row topics-bar">
+        <div id="carousel1" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <!-- First carousel page content start -->
+              <div id="topic-thumbnail1" class="col-md-4 col-lg-2 topics-thumbnail-wrapper">
+                <div class="thumbnail topics-thumbnail"><a href="top-stories.html" class="topics-link"><img src="res/topic_icon_top_stories.png" alt="Thumbnail Image 1" width="120" height="161" class="topics-img">
+                  <div class="caption">
+                    <h3 class="topics-title">Top Stories</h3>
+                    <p class="topics-subtitle">Optional content and buttons for Thumbnail #1</p>
+                  </div>
+                </a></div>
+              </div>
+              <div id="topic-thumbnail2" class="col-md-4 col-lg-2 topics-thumbnail-wrapper">
+                <div class="thumbnail topics-thumbnail"><img src="res/topic_icon_politics.png" alt="Thumbnail Image 2" width="160" height="161" class="topics-img">
+                  <div class="caption">
+                    <h3 class="topics-title">Politics</h3>
+                    <p class="topics-subtitle">Optional content and buttons for Thumbnail #2</p>
+                  </div>
+                </div>
+              </div>
+              <div id="topic-thumbnail3" class="col-md-4 col-lg-2 topics-thumbnail-wrapper">
+                <div class="thumbnail topics-thumbnail"><img src="res/topic_icon_economy.png" alt="Thumbnail Image 3" width="159" height="160" class="topics-img">
+                  <div class="caption">
+                    <h3 class="topics-title">Economy</h3>
+                    <p class="topics-subtitle">Optional content and buttons for Thumbnail #3</p>
+                  </div>
+                </div>
+              </div>
+              <div id="topic-thumbnail4" class="col-md-4 col-lg-2 topics-thumbnail-wrapper">
+                <div class="thumbnail topics-thumbnail"><img src="res/topic_icon_science.png" alt="Thumbnail Image 4" width="137" height="160" class="topics-img">
+                  <div class="caption">
+                    <h3 class="topics-title">Science &amp; Tech</h3>
+                    <p class="topics-subtitle">Optional content and buttons for Thumbnail #4</p>
+                  </div>
+                </div>
+              </div>
+              <div id="topic-thumbnail5" class="col-md-4 col-lg-2 topics-thumbnail-wrapper">
+                <div class="thumbnail topics-thumbnail"><img src="res/topic_icon_entertainment.png" alt="Thumbnail Image 5" width="159" height="160" class="topics-img">
+                  <div class="caption">
+                    <h3 class="topics-title">Entertainment</h3>
+                    <p class="topics-subtitle">Optional content and buttons for Thumbnail #5</p>
+                  </div>
+                </div>
+              </div>
+              <div id="topic-thumbnail6" class="col-md-4 col-lg-2 topics-thumbnail-wrapper">
+                <div class="thumbnail topics-thumbnail"><img src="res/topic_icon_sports.png" alt="Thumbnail Image 6" width="175" height="160" class="topics-img">
+                  <div class="caption">
+                    <h3 class="topics-title">Sports</h3>
+                    <p class="topics-subtitle">Optional content and buttons for Thumbnail #6</p>
+                  </div>
+                </div>
+              </div>
+              <!-- First carousel page content end -->
+            </div>
+            <div class="item">
+              <!-- Second carousel page content start -->
+              <div id="topic-thumbnail7" class="col-md-4 col-lg-2 topics-thumbnail-wrapper">
+                <div class="thumbnail topics-thumbnail"><img src="res/topic_icon_world .png" alt="Thumbnail Image 7" width="269" height="160" class="topics-img">
+                  <div class="caption">
+                    <h3 class="topics-title">World</h3>
+                    <p class="topics-subtitle">Optional content and buttons for Thumbnail #7</p>
+                  </div>
+                </div>
+              </div>
+              <div id="topic-thumbnail8" class="col-md-4 col-lg-2 topics-thumbnail-wrapper">
+                <div class="thumbnail topics-thumbnail"><img src="res/topic_icon_united_states.png" alt="Thumbnail Image 8" width="160" height="160" class="topics-img">
+                  <div class="caption">
+                    <h3 class="topics-title">United States</h3>
+                    <p class="topics-subtitle">Optional content and buttons for Thumbnail #8</p>
+                  </div>
+                </div>
+              </div>
+              <div id="topic-thumbnail9" class="col-md-4 col-lg-2 topics-thumbnail-wrapper">
+                <div class="thumbnail topics-thumbnail"><img src="res/topic_icon_china.png" alt="Thumbnail Image 9" width="159" height="160" class="topics-img">
+                  <div class="caption">
+                    <h3 class="topics-title">China</h3>
+                    <p class="topics-subtitle">Optional content and buttons for Thumbnail #9</p>
+                  </div>
+                </div>
+              </div>
+              <div id="topic-thumbnail10" class="col-md-4 col-lg-2 topics-thumbnail-wrapper">
+                <div class="thumbnail topics-thumbnail"><img src="res/topic_icon_local.png" alt="Thumbnail Image 10" width="159" height="160" class="topics-img">
+                  <div class="caption">
+                    <h3 class="topics-title">Local</h3>
+                    <p class="topics-subtitle">Optional content and buttons for Thumbnail #10</p>
+                  </div>
+                </div>
+              </div>
+              <div id="topic-thumbnail11" class="col-md-4 col-lg-2 topics-thumbnail-wrapper">
+                <div class="thumbnail topics-thumbnail"><img src="res/topic_icon_im_feeling_lucky.png" alt="Thumbnail Image 11" width="156" height="160" class="topics-img">
+                  <div class="caption">
+                    <h3 class="topics-title">I'm Feeling Lucky</h3>
+                    <p class="topics-subtitle">Optional content and buttons for Thumbnail #11</p>
+                  </div>
+                </div>
+              </div>
+              <div id="topic-thumbnail12" class="col-md-4 col-lg-2 topics-thumbnail-wrapper">
+                <div class="thumbnail topics-thumbnail"><img src="res/topic_icon_your_own.png" alt="Thumbnail Image 12" width="240" height="160" class="topics-img">
+                  <div class="caption">
+                    <h3 class="topics-title">Your Own</h3>
+                    <p class="topics-subtitle">Optional content and buttons for Thumbnail #12</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Second carousel page content end -->
+            </div>
+          <a class="left carousel-control topics-carousel-control" href="#carousel1" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control topics-carousel-control" href="#carousel1" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a></div>
+      </div>
+      <!-- Brand and toggle get grouped for better mobile display -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.2.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
