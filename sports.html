@@ -37,24 +37,7 @@
       $(document).ready(function(){
         $("#menubar-topic-btn").click(function(){
           $("#topic-bar-wrapper").fadeToggle();
-          $("#topic-thumbnail1").fadeToggle(800);
-          $("#topic-thumbnail2").fadeToggle(800);
-          $("#topic-thumbnail3").fadeToggle(800);
-          $("#topic-thumbnail4").fadeToggle(800);
-          $("#topic-thumbnail5").fadeToggle(800);
-          $("#topic-thumbnail6").fadeToggle(800);
-          $("#topic-thumbnail7").fadeToggle(800);
-          $("#topic-thumbnail8").fadeToggle(800);
-          $("#topic-thumbnail9").fadeToggle(800);
-          $("#topic-thumbnail10").fadeToggle(800);
-          $("#topic-thumbnail11").fadeToggle(800);
-          $("#topic-thumbnail12").fadeToggle(800);
         });
-		/*
-        $("#menubar-lightbulb-btn").click(function(){
-          $("body").css("background-color", "black");
-        });
-		*/
       });
     </script>
   </head>
@@ -108,7 +91,7 @@
         </div> <!-- /.navbar-collapse -->
       </div> <!-- /.container-fluid -->
     </nav> <!-- /.navbar-default -->
-    <nav id="topic-bar-wrapper" class="navbar navbar-default topic-bar-wrapper">
+  <nav id="topic-bar-wrapper" class="navbar navbar-default topic-bar-wrapper">
       <div class="container-fluid">
         <div class="row topics-bar">
           <div id="carousel1" class="carousel slide" data-ride="carousel">
@@ -218,9 +201,11 @@
         </div> <!-- /.topics-bar -->
       </div> <!-- /.container-fluid -->
     </nav> <!-- /.topic-bar-wrapper -->
-  <div class="row main-content-wrapper">
-    <div class="col-lg-6"></div>
-    <div class="col-lg-6"></div>
-  </div> <!-- /.main-content-wrapper -->
+    <div class="container-fluid main-content-wrapper">
+      <div class="row">
+        <div class="col-lg-10">what</div>
+        <div class="col-lg-2"></div>
+      </div> <!-- /.row -->
+    </div> <!-- /.container-fluid main-content-wrapper-->
   </body>
 </html>
