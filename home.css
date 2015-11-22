@@ -61,6 +61,14 @@
 	margin-right: 13px;
 	font-size: x-large;
 }
+.menubar-wrapper {
+    width: 100%;
+    display: block;
+    position: fixed;
+    float: none;
+    top: 0;
+    left: 0;
+}
 .topics-title {
 	text-align: center;
 }

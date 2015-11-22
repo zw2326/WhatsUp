@@ -24,11 +24,15 @@
 
     <script type="text/javascript">
       function MM_callJS(jsStr) { // v2.0
-        return eval(jsStr)
+        return eval(jsStr);
       }
     </script>
 
     <script>
+      function ToggleBackgroundColor() {
+        var curColor = document.body.style.backgroundColor;
+        document.body.style.backgroundColor = (curColor == "black") ? "white" : "black";
+      }
       $(document).ready(function(){
         $("#menubar-topic-btn").click(function(){
           $("#topic-bar-wrapper").fadeToggle();
@@ -45,14 +49,16 @@
           $("#topic-thumbnail11").fadeToggle(800);
           $("#topic-thumbnail12").fadeToggle(800);
         });
+		/*
         $("#menubar-lightbulb-btn").click(function(){
           $("body").css("background-color", "black");
         });
+		*/
       });
     </script>
   </head>
   <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default menubar-wrapper">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
@@ -83,7 +89,7 @@
           </ul>
           <ul class="nav navbar-nav navbar-right"> <!-- lights and sign in panel -->
             <li>
-              <button type="submit" id="menubar-lightbulb-btn" class="btn btn-default menubar-lightbulb-btn"><img src="res/menubar_lights_on.png" alt="lights-on-off" width="25" height="25" class="menubar-lightbulb-img"></button>
+              <button type="submit" id="menubar-lightbulb-btn" class="btn btn-default menubar-lightbulb-btn" onclick="ToggleBackgroundColor()"><img src="res/menubar_lights_on.png" alt="lights-on-off" width="25" height="25" class="menubar-lightbulb-img"></button>
             </li>
             <li><a href="#">Sign in</a></li>
             <li><a href="#">Favourite</a></li>
@@ -211,5 +217,6 @@
         </div> <!-- /.topics-bar -->
       </div> <!-- /.container-fluid -->
     </nav> <!-- /.topic-bar-wrapper -->
+  <h2>What is this<br><br><br><br><br><br><br>What is that<br><br><br><br><br><br><br>What are these<br><br><br><br><br><br><br>What are those<br><br><br><br><br><br><br>This should do<br><br><br><br><br><br><br>And more<br><br><br><br><br><br><br>For further tests<br><br><br><br><br><br><br>And this is the<br><br><br><br><br><br><br>END</h2>
   </body>
 </html>
