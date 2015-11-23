@@ -94,7 +94,7 @@
 	display: none;
 	top: 250px;
   z-index: 1;
-  position: absolute;
+  position: fixed;
 }
 .topics-thumbnail:hover {
 	background-color: rgba(239,239,239,1);
