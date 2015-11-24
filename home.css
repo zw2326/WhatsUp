@@ -69,6 +69,7 @@
   float: none;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 .topics-title {
 	text-align: center;

@@ -127,6 +127,7 @@
         </div> <!-- /.navbar-collapse -->
       </div> <!-- /.container-fluid -->
     </nav> <!-- /.navbar-default -->
+
   <nav id="topic-bar-wrapper" class="navbar navbar-default topic-bar-wrapper">
       <div class="container-fluid">
         <div class="row topics-bar">
@@ -237,19 +238,60 @@
         </div> <!-- /.topics-bar -->
       </div> <!-- /.container-fluid -->
     </nav> <!-- /.topic-bar-wrapper -->
-    <div class="container-fluid main-content-wrapper">
+
+    <div class="carousel slide main-content-wrapper" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner" role="listbox">
+          <div class="item active main-content-sports-live">
+            <div class="sports-live-left-panel-wrapper">
+              <div id="sports-live-logo"><img src="res/sports_sports_live.png" alt="" /></div>
+              <div class="left-panel-settings-wrapper">
+                <div class="col-lg-9 sports-live-calendar" id="Datepicker1"></div>
+                <div id="sports-live-settings-category">
+                  <ul>
+                    <li><label><input type="checkbox">All</label></li>
+                    <li><label><input type="checkbox">Basketball</label></li>
+                    <li><label><input type="checkbox">Soccer</label></li>
+                    <li><label><input type="checkbox">Badminton</label></li>
+                    <li><label><input type="checkbox">Tennis</label></li>
+                    <li><label><input type="checkbox">Football</label></li>
+                  </ul>
+                </div>
+                <div id="sports-live-settings-is-started">
+                  <ul>
+                    <li><label><input type="checkbox">Over</label></li>
+                    <li><label><input type="checkbox">On Going</label></li>
+                    <li><label><input type="checkbox">Not Started</label></li>
+                  </ul>
+                </div>
+              </div>
+            </div> <!-- /.sports-live-left-panel-wrapper -->
+            <div class="sports-live-right-panel-wrapper">
+              
+            </div> <!-- /.sports-live-right-panel-wrapper -->
+          </div> <!-- /.main-content-sports-live -->
+          <div class="item main-content-sports-everything">
+            <div id="sports-everything-logo"><img src="res/sports_sports_everything.png" alt="" /></div>
+          </div> <!-- /.main-content-sports-everything -->
+        </div> <!-- /.carousel-inner -->
+        <a class="left carousel-control main-content-carousel-control" href=".main-content-wrapper" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control main-content-carousel-control" href=".main-content-wrapper" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+    </div> <!-- /.main-content-wrapper -->
+
+
+    <!--
+    <div class="container-fluid">
       <div class="row">
         <div id="main-content-left-panel-wrapper">
           <div id="main-content-dragbar-wrapper">
-            <div id="main-content-dragbar"></div>
-          </div> <!-- /.main-content-dragbar-wrapper -->
-          <h1>Sports Live</h1>
+            <div id="main-content-dragbar-handle"><img src="res/main_content_dragbar_handle.png" alt="" width="15" /></div>
+          </div>
+          <div id="main-content-left-panel-logo"><img src="res/sports_sports_live.png" alt="" /></div>
           <div class="col-lg-9 main-content-left-panel-calendar" id="Datepicker1"></div>
-        </div> <!-- /.main-content-left-panel-wrapper -->
+        </div>
         <div id="main-content-right-panel-wrapper">
-          <h1>Sports Everything</h1>
-        </div> <!-- /.main-content-right-panel-wrapper -->
-      </div> <!-- /.row -->
-    </div> <!-- /.container-fluid main-content-wrapper-->
+          <div id="main-content-right-panel-logo"><img src="res/sports_sports_everything.png" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    -->
   </body>
 </html>
